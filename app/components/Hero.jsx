@@ -19,10 +19,10 @@ const Hero = () => {
     })
   })
   return (
-    <div className="pt-[110px] relative" id="hero">
+    <section className="pt-[110px] relative" id="hero">
       <div className="px-8 pt-14 pb-6 xl:px-32 xl:py-20">
         <div className="hiding"><h1 className="text-[13vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Welcome to</h1></div>
-        <div className="hiding"><h1 className="text-[13vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Dori Dori</h1></div>
+        <div className="hiding"><h1 className="text-[13vw] xl:text-8xl font-extrabold xl:w-[63%] text-pink-800 tagline">Dori Dori</h1></div>
         <div className="hiding"><h1 className="text-[13vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Wonderland!</h1></div>
         <div className="flex gap-8 py-10">
           <button className="px-4 w-60 py-2 md:px-8 md:py-6 md:text-xl xl:w-48 font-semibold rounded-full text-white bg-pink-800 hover:bg-pink-700 transition-all duration-500">ORDER NOW</button>
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
         <img src="/images/cookie-3.png" className="h-[150px] xl:h-[200px] rotate-[30deg]" alt="" />
       </div>
-    </div>
+    </section>
   )
 }
 

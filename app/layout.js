@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
           rel="stylesheet"
         ></link>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
           rel="stylesheet"
