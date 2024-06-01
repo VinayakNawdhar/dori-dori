@@ -108,7 +108,7 @@ nav ul li a::before{
   font-family: "Montserrat";
 }
 .product-img{
-  filter: blur(5px);
+  filter: blur(2px);
   transition: all 0.5s ease;
 }
 .product:hover .product-img{

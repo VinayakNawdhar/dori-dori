@@ -17,7 +17,22 @@ const Hero = () => {
       ease : "Power1.easeInOut",
       duration : 1
     })
+
+    document.querySelector('#hero').addEventListener("mousemove", function (e) {
+      const { clientX, clientY } = e;
+      const { clientWidth, clientHeight } = document.querySelector('#hero');
+
+      const xPos = (clientX / clientWidth - 0.5) * 100;
+      const yPos = (clientY / clientHeight - 0.5) * 100;
+      
+      gsap.to('.img-div', {
+          x: xPos/3,
+          y: yPos/3
+      })
   })
+
+  })
+  
   return (
     <section className="pt-[110px] relative" id="hero">
       <div className="px-8 pt-14 pb-6 xl:px-32 xl:py-20">
