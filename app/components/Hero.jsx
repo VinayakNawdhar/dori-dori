@@ -3,17 +3,17 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 const Hero = () => {
   useGSAP(() => {
-    gsap.from('.hiding h1',{
-      y : '100%',
-      opacity : 0,
+    gsap.to('.hiding h1',{
+      y : '0%',
+      opacity : 1,
       stagger : 0.5,
       ease : "Power1.easeInOut",
       duration : 0.8,
       delay : 1
     })
-    gsap.from('nav',{
-      y:'-100%',
-      opacity : 0,
+    gsap.to('nav',{
+      y:'0%',
+      opacity : 1,
       ease : "Power1.easeInOut",
       duration : 1
     })

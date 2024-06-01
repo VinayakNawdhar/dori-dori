@@ -7,15 +7,15 @@ import gsap from 'gsap'
 const Navbar = () => {
   const [nav, setnav] = useState(false)
   return (
-    <nav className='flex py-3 bg-pink-50 shadow-md justify-between items-center px-32 fixed w-full z-[100]'>
+    <nav className='flex py-3 bg-pink-50 shadow-md translate-y-[-100%] justify-between items-center px-32 fixed w-full z-[100]'>
         <ul className='md:flex gap-10 text-gray-600 hidden'>
-            <li className='font-[300] text-xl'>
+            <li className='font-[400] text-xl'>
                 <Link  href=''>Shipping</Link>
             </li>
-            <li className='font-[300] text-xl'>
+            <li className='font-[400] text-xl'>
                 <Link href=''>Corporate Gifting</Link>
             </li>
-            <li className='font-[300] text-xl'>
+            <li className='font-[400] text-xl'>
                 <Link href=''>Location</Link>
             </li>
         </ul>
@@ -66,13 +66,13 @@ const Navbar = () => {
         </div>
         <Image src='/images/dori-dori.png' width={100} height={100} className='absolute left-1/2 translate-x-[-50%]'></Image>
         <ul className='md:flex gap-10 text-gray-600 w-[300px] hidden'>
-            <li className='font-[300] text-xl'>
+            <li className='font-[400] text-xl'>
                 <Link href=''>About</Link>
             </li>
-            <li className='font-[300] text-xl'>
+            <li className='font-[400] text-xl'>
                 <Link href=''>Reviews</Link>
             </li>
-            <li className='font-[300] text-xl'>
+            <li className='font-[400] text-xl'>
                 <Link href=''>Contact</Link>
             </li>
         </ul>
