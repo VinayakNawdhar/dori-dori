@@ -127,3 +127,7 @@ nav ul li a::before{
   opacity: 0;
 }
 
+/* Footer   */
+#footer h1{
+  font-family: "Outfit";
+}
