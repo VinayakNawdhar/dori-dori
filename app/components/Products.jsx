@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 const Products = () => {
     return (
-        <section id='product' className='min-h-screen pt-96 xl:pt-32 pb-8'>
+        <section id='product' className='min-h-screen mt-96 xl:mt-0 xl:pt-32 pb-8'>
             <h1 className='text-6xl text-center font-extrabold tracking-tighter text-black/85 mb-5'>Indulge Your Craving!</h1>
             <h3 className='text-center font-semibold text-xl tracking-tighter'>because sometimes you deserve a treat.</h3>
             <div className='px-2 py-3 xl:px-10 xl:py-4 bg-white/50 mx-5 rounded-xl mt-8'>

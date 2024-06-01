@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonial = () => {
     return (
-        <section class="bg-white/90 py-16">
+        <section id='reviews' class="bg-white/90 py-16">
             <h1 className='text-3xl xl:text-5xl font-extrabold text-center font-["Outfit"] tracking-tighter drop-shadow-2xl'>WHAT OUR CUSTOMER SAYS</h1>
             <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 flex gap-8 flex-wrap">
                 {testimonials.map(test => (

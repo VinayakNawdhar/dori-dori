@@ -126,7 +126,9 @@ nav ul li a::before{
 .product:hover p{
   opacity: 0;
 }
-
+#about,#reviews,#footer{
+    scroll-margin: 110px;
+}
 /* Footer   */
 #footer h1{
   font-family: "Outfit";
