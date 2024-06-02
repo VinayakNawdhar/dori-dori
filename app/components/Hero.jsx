@@ -36,9 +36,9 @@ const Hero = () => {
   return (
     <section className="pt-[80px] md:pt-[110px] relative" id="hero">
       <div className="pt-8 px-8 md:pt-14 md:pb-6 xl:px-32 xl:py-20 flex flex-col gap-0 space-y-[-15px] md:space-y-0 md:scroll-m-[110px] scroll-m-[80px]">
-        <div className="hiding"><h1 className="text-[11vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Welcome to</h1></div>
-        <div className="hiding"><h1 className="text-[11vw] xl:text-8xl font-extrabold xl:w-[63%] text-pink-800 tagline">Dori Dori</h1></div>
-        <div className="hiding"><h1 className="text-[11vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Wonderland!</h1></div>
+        <div className="hiding"><h1 className="text-[9vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Welcome to</h1></div>
+        <div className="hiding"><h1 className="text-[9vw] xl:text-8xl font-extrabold xl:w-[63%] text-pink-800 tagline">Dori Dori</h1></div>
+        <div className="hiding"><h1 className="text-[9vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Wonderland!</h1></div>
         <div className="flex gap-8 py-6 md:py-10">
           <button className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold rounded-full text-white bg-pink-800 hover:bg-pink-700 transition-all duration-500">ORDER NOW</button>
           <button className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold border-4 border-pink-900 rounded-full">Catering</button>
