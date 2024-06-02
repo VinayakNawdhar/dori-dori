@@ -5,8 +5,8 @@ import { useGSAP } from '@gsap/react'
 const Products = () => {
     return (
         <section id='product' className='min-h-screen mt-[190px] xl:mt-0 xl:pt-32 pb-8 scroll-m-[120px] md:scroll-m-0'>
-            <h1 className='text-6xl text-center font-extrabold tracking-tighter text-black/85 mb-5'>Indulge Your Craving!</h1>
-            <h3 className='text-center font-semibold text-xl tracking-tighter'>because sometimes you deserve a treat.</h3>
+            <h1 className='text-4xl md:text-6xl text-center font-extrabold tracking-tighter text-black/85 mb-5'>Indulge Your Craving!</h1>
+            <h3 className='text-center font-semibold text-md md:text-xl tracking-tighter'>because sometimes you deserve a treat.</h3>
             <div className='px-2 py-3 xl:px-10 xl:py-4 bg-white/50 mx-5 rounded-xl mt-8'>
                 <h1 className='text-4xl xl:text-5xl mb-10 font-medium font-["Outfit"] opacity-75'>Gourmet Marshmallows</h1>
                 <div className='flex flex-wrap gap-8 justify-center'>
