@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
 const inter = Inter({ subsets: ["latin"] });
-
+import Script from "next/script";
 export const metadata = {
   title: "Dori Dori.",
   description:
@@ -19,7 +18,11 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Outfit:wght@100..900&display=swap"
           rel="stylesheet"
@@ -36,7 +39,10 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
           rel="stylesheet"
         ></link>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
           rel="stylesheet"
@@ -45,6 +51,16 @@ export default function RootLayout({ children }) {
           href="https://db.onlinewebfonts.com/c/cfdb15a809da1e165116b60571ea4147?family=Absinette+W01+Regular"
           rel="stylesheet"
         ></link>
+        <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></Script>
+        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></Script>
+        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></Script>
+        <Script strategy="beforeInteractive" src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></Script>
+        <Script
+          type="text/javascript"
+          strategy="beforeInteractive"
+          src="https://unpkg.com/sheryjs/dist/Shery.js"
+        ></Script>
       </head>
       <body>{children}</body>
     </html>

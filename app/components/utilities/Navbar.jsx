@@ -7,6 +7,16 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 const Navbar = () => {
     useGSAP(() => {
+        Shery.makeMagnet(".magnet-target" /* Element to target.*/, {
+            //Parameters are optional.
+            ease: "cubic-bezier(0.12, 0, 0.39, 0)",
+            duration: 1,
+        });
+        Shery.makeMagnet(".scroll-links" /* Element to target.*/, {
+            //Parameters are optional.
+            ease: "cubic-bezier(0.12, 0, 0.39, 0)",
+            duration: 100,
+        });
         document.querySelectorAll('.scroll-links').forEach(elem => {
             elem.addEventListener('click', function (e) {
                 e.preventDefault()
@@ -85,7 +95,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <Image src='/images/dori-dori.png' width={100} height={100} className='absolute left-1/2 translate-x-[-50%] h-[60px] w-[70px] md:h-[100px] md:w-[120px]'></Image>
+            <Image src='/images/dori-dori.png' width={100} height={100} className='magnet-target absolute left-1/2 translate-x-[-50%] h-[60px] w-[70px] md:h-[100px] md:w-[120px]'></Image>
             <ul className='md:flex gap-10 text-gray-600 w-[300px] hidden'>
                 <li className='font-[400] text-xl'>
                     <Link className='scroll-links' href='#about'>About</Link>

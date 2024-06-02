@@ -1,42 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&display=swap");
 @font-face {
-  font-family: 'tagline';
-  src: url('/fonts/Le Jour Script.woff2') format('woff2');
+  font-family: "tagline";
+  src: url("/fonts/Le Jour Script.woff2") format("woff2");
   font-weight: bolder;
   font-style: normal;
 }
 @font-face {
-  font-family: 'metropolis';
-  src: url('/fonts/metropolis.woff2') format('woff2');
+  font-family: "metropolis";
+  src: url("/fonts/metropolis.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'something';
-  src: url('/fonts/2.woff2') format('woff2');
+  font-family: "something";
+  src: url("/fonts/2.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-} @font-face {
-  font-family: 'ITC Cheltenham Std Book';
+}
+@font-face {
+  font-family: "ITC Cheltenham Std Book";
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/CheltenhamStdBook.woff') format('woff');
-  }
-  
-:root {
-  --bg-color: #FDEEEC; /* Define a root variable for primary color */
-  --font-color: #5B484A;
-  --secondary-color : rgb(213, 107, 124);
+  src: url("/fonts/CheltenhamStdBook.woff") format("woff");
 }
 
-*{
+:root {
+  --bg-color: #fdeeec; /* Define a root variable for primary color */
+  --font-color: #5b484a;
+  --secondary-color: rgb(213, 107, 124);
+}
+
+* {
   font-family: "Roboto";
 }
-body{
+body {
   overflow-x: hidden;
   background-color: var(--bg-color);
 }
@@ -48,24 +49,24 @@ body{
 }
 
 /* navbar    */
-nav{
+nav {
   background-color: var(--bg-color);
-  
 }
-nav ul li a{
+nav ul li a {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
   transition: all 0.3s ease;
   font-family: "Roboto";
 }
-nav ul li a:hover{
-  color: rgb(213, 107, 124);
+nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
 }
-nav ul li a:hover::before{
+nav ul li a:hover::before {
   width: 100%;
 }
-nav ul li a::before{
+nav ul li a::before {
   content: "";
   width: 0%;
   background: rgb(213, 107, 124);
@@ -75,50 +76,45 @@ nav ul li a::before{
   transition: all 0.3s ease;
 }
 
-
-
-
-
 /* Hero  */
-#hero{
+#hero {
   height: 100vh;
   width: 100%;
   /* background: linear-gradient(135deg, #d6ccd6b4, #e4c8d6, #d8a8c0, #d9aec4, #eac8c8); */
   /* background-color: #FFD8D8; */
   color: var(--font-color);
 }
-.tagline{
+.tagline {
   font-family: "ITC Cheltenham Std Book";
 }
-#hero div h2{
+#hero div h2 {
   font-family: "Poetsen One";
   text-shadow: 0px 0px 10px rgba(227, 173, 215, 0.664);
 }
-.hiding{
+.hiding {
   overflow: hidden;
 }
-.hiding h1{
+.hiding h1 {
   transform: translateY(100%);
 }
 
-
 /* Products   */
-#product>h1{
+#product > h1 {
   font-family: "Montserrat";
 }
-#product>h3{
+#product > h3 {
   font-family: "Montserrat";
 }
-.product-img{
+.product-img {
   filter: blur(2px);
   transition: all 0.5s ease;
 }
-.product:hover .product-img{
+.product:hover .product-img {
   filter: blur(0);
   scale: 1.25;
 }
 
-.product p{
+.product p {
   font-family: "Archivo";
   font-weight: 600;
   white-space: nowrap;
@@ -128,10 +124,19 @@ nav ul li a::before{
   padding: 12px 0px;
 }
 
-.product:hover p{
+.product:hover p {
   opacity: 0;
 }
 /* Footer   */
-#footer h1{
+#footer h1 {
   font-family: "Outfit";
+}
+
+#behindmouse {
+  background-color: #106daa61 !important ;
+}
+
+.circle{
+  background-color: #FAF3F3 !important;
+  color: black !important;
 }

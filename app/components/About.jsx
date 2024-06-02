@@ -1,6 +1,18 @@
+'use client'
+import { useGSAP } from '@gsap/react'
 import React from 'react'
 
 const About = () => {
+    useGSAP(() => {
+        Shery.imageMasker(".mask-target" /* Element to target.*/, {
+            //Parameters are optional.
+            mouseFollower: true,
+            text: "DORI DORI",
+            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+            duration:1,
+          });
+          
+    })
     return (
         <section id='about' className='py-10 bg-white/70 flex flex-col gap-5 md:scroll-m-[110px] scroll-m-[80px]'>
             <div className='flex items-center flex-wrap'>
@@ -9,7 +21,7 @@ const About = () => {
                     <p className='xl:w-[85%] font-["Archivo"] tracking-tight opacity-75'>At Dori Dori, we bake the tastiest cookies and craft gourmet marshmallows. Our cookies are baked to perfection, with a crunchy exterior and a soft, chewy center. Each marshmallow is handcrafted using only the finest ingredients, resulting in fluffy clouds of sweetness that melt in your mouth.</p>
                 </div>
                 <div className='overflow-hidden rounded-2xl px-5 md:px-0 xl:h-[500px] xl:w-[500px]'>
-                    <img src="/images/img-not-just.webp" className='w-full h-full object-cover object-center' alt="" />
+                    <img src="/images/img-not-just.webp" className='mask-target w-full h-full object-cover object-center' alt="" />
                 </div>
             </div>
             <div className='flex px-8 xl:flex-row-reverse flex-wrap items-center mt-10'>
@@ -21,8 +33,8 @@ const About = () => {
                     </div>
                 </div>
                 <div className='xl:w-1/2 flex justify-center'>
-                    <div className='overflow-hidden rounded-2xl xl:h-[500px] xl:w-[500px]'>
-                        <img src="/images/img-not-just-baker.webp" className='w-full h-full object-cover object-center' alt="" />
+                    <div className='overflow-hidden rounded-2xl xl:h-[500px] xl:w-[500px] '>
+                        <img src="/images/img-not-just-baker.webp" className='mask-target w-full h-full object-cover object-center' alt="" />
                     </div>
                 </div>
             </div>
