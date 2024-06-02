@@ -44,12 +44,12 @@ const Hero = () => {
           <button className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold border-4 border-pink-900 rounded-full">Catering</button>
         </div>
       </div>
-      <div className="img-div grid gap-10 justify-center xl:absolute top-0 xl:right-[300px]">
+      <div className="img-div grid gap-10 pl-16 md:pl-0 justify-start md:justify-center xl:absolute top-0 xl:right-[300px]">
         <img src="/images/cookie-1.png" className="h-[90px] xl:h-[200px] rotate-[30deg]" alt="" />
         <div className="relative">
           <img src="/images/cookie-2.webp" className="h-[90px] xl:h-[200px] rotate-[-30deg]" alt="" />
-          <div className="absolute top-0 right-[-60%] w-56 xl:flex flex-col hidden">
-            <img src="/images/arrow.svg" className="w-32 rotate-[-0deg]" alt="" />
+          <div className="scale-[0.7] md:scale-100 absolute top-0 right-[-110%] md:right-[-60%] w-56 flex flex-col">
+            <img src="/images/arrow.svg" className="pl-5 md:pl-0 w-24 md:w-32 rotate-[-0deg]" alt="" />
             <div className="absolute bottom-[-110px] right-[-20%] w-48">
               <h1 className="font-bold">MONSTER</h1>
               <h3 className="text-sm">Gluten-friendly peanut butter oatmeal cookie with semi-sweet chocolate chips & M&M’s</h3>
