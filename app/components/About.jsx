@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <section id='about' className='py-10 bg-white/70 flex flex-col gap-5'>
+        <section id='about' className='py-10 bg-white/70 flex flex-col gap-5 md:scroll-m-[110px] scroll-m-[80px]'>
             <div className='flex items-center flex-wrap'>
                 <div className='xl:w-1/2 flex flex-col px-8 xl:pl-32 gap-5 mb-10 md:mb-0'>
                     <h1 className='xl:w-[75%] text-left text-3xl md:text-5xl font-extrabold tracking-tighter font-[Archivo] uppercase'>From cookies to marshmallow , pure bliss.</h1>

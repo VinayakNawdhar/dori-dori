@@ -49,7 +49,6 @@ body{
 
 /* navbar    */
 nav{
-  height: 110px;
   background-color: var(--bg-color);
   
 }
@@ -131,9 +130,6 @@ nav ul li a::before{
 
 .product:hover p{
   opacity: 0;
-}
-#about,#reviews,#footer{
-    scroll-margin: 110px;
 }
 /* Footer   */
 #footer h1{
