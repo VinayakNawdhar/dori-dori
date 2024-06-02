@@ -45,9 +45,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="img-div grid gap-10 justify-center xl:absolute top-0 xl:right-[300px]">
-        <img src="/images/cookie-1.png" className="h-[100px] xl:h-[200px] rotate-[30deg]" alt="" />
+        <img src="/images/cookie-1.png" className="h-[90px] xl:h-[200px] rotate-[30deg]" alt="" />
         <div className="relative">
-          <img src="/images/cookie-2.webp" className="h-[100px] xl:h-[200px] rotate-[-30deg]" alt="" />
+          <img src="/images/cookie-2.webp" className="h-[90px] xl:h-[200px] rotate-[-30deg]" alt="" />
           <div className="absolute top-0 right-[-60%] w-56 xl:flex flex-col hidden">
             <img src="/images/arrow.svg" className="w-32 rotate-[-0deg]" alt="" />
             <div className="absolute bottom-[-110px] right-[-20%] w-48">
@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <img src="/images/cookie-3.png" className="h-[100px] xl:h-[200px] rotate-[30deg]" alt="" />
+        <img src="/images/cookie-3.png" className="h-[90px] xl:h-[200px] rotate-[30deg]" alt="" />
       </div>
     </section>
   )
