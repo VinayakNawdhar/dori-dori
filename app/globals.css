@@ -118,11 +118,17 @@ nav ul li a::before{
   filter: blur(0);
   scale: 1.25;
 }
+
 .product p{
-  font-family: "Jersey 10";
-  font-weight: 500;
+  font-family: "Archivo";
+  font-weight: 600;
   white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  border-radius: 0px;
+  padding: 12px 0px;
 }
+
 .product:hover p{
   opacity: 0;
 }
