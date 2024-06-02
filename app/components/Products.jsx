@@ -8,7 +8,7 @@ const Products = () => {
             <h1 className='text-4xl md:text-6xl text-center font-extrabold tracking-tighter text-black/85 mb-5'>Indulge Your Craving!</h1>
             <h3 className='text-center font-semibold text-md md:text-xl tracking-tighter'>because sometimes you deserve a treat.</h3>
             <div className='px-2 py-3 xl:px-10 xl:py-4 bg-white/50 mx-5 rounded-xl mt-8'>
-                <h1 className='text-4xl xl:text-5xl mb-10 font-medium font-["Outfit"] opacity-75'>Gourmet Marshmallows</h1>
+                <h1 className='text-2xl xl:text-5xl mb-10 font-medium font-["Outfit"] opacity-75'>Gourmet Marshmallows</h1>
                 <div className='flex flex-wrap gap-2 md:gap-8 justify-center'>
                     <div className='w-[140px] h-[150px] xl:w-[350px] xl:h-[350px] overflow-hidden relative product rounded-xl'>
                         <div className='w-full h-full overflow-hidden product-img '>
@@ -49,7 +49,7 @@ const Products = () => {
                 </div>
             </div>
             <div className='px-2 py-3 xl:px-10 xl:py-4 bg-red-800/5 mx-5 rounded-xl mt-8'>
-                <h1 className='text-4xl xl:text-5xl mb-10 font-medium font-["Outfit"] opacity-75'>New York Style Cookies </h1>
+                <h1 className='text-2xl xl:text-5xl mb-10 font-medium font-["Outfit"] opacity-75'>New York Style Cookies </h1>
                 <div className='flex flex-wrap gap-2 justify-center'>
                     <div className='w-[140px] h-[150px] xl:w-[350px] xl:h-[350px] overflow-hidden relative product rounded-xl'>
                         <div className='w-full h-full overflow-hidden product-img '>
