@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="hiding"><h1 className="text-[9vw] xl:text-8xl font-extrabold xl:w-[63%] text-pink-800 tagline">Dori Dori</h1></div>
         <div className="hiding"><h1 className="text-[9vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Wonderland!</h1></div>
         <div className="flex gap-8 py-6 md:py-10">
-          <button className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold rounded-full text-white bg-pink-800 hover:bg-pink-700 transition-all duration-500">ORDER NOW</button>
+          <button className="px-4 w-36 md:w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold rounded-full text-white bg-pink-800 hover:bg-pink-700 transition-all duration-500">ORDER NOW</button>
           {/* <button className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold border-4 border-pink-900 rounded-full">Catering</button> */}
         </div>
       </div>
