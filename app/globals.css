@@ -54,7 +54,7 @@ nav {
 }
 nav ul li a {
   display: flex;
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
   position: relative;
   transition: all 0.3s ease;
   font-family: "Roboto";
@@ -112,6 +112,9 @@ nav ul li a::before {
 .product:hover .product-img {
   filter: blur(0);
   scale: 1.25;
+}
+#nysc,#gm{
+  scroll-margin: 110px;
 }
 
 .product p {

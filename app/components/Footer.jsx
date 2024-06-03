@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 const Footer = () => {
     return (
-        <section id='footer' className='md:scroll-m-[110px] scroll-m-[80px]'>
+        <section id='footer' className='md:scroll-m-[110px] scroll-m-[80px] bg-[#FDF2F8]'>
             <div className='flex flex-wrap p-10 gap-5 justify-evenly'>
                 <div className='flex flex-col items-center'>
                     <img className='h-48' src="/images/dori-dori.png" alt="" />
