@@ -140,3 +140,9 @@ nav ul li a::before {
   background-color: #FAF3F3 !important;
   color: black !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .mousefollower{
+    visibility: hidden;
+  }
+}
