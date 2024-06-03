@@ -2,7 +2,7 @@
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useEffect } from "react"
-
+import Link from "next/link"
 const Hero = () => {
 
   useGSAP(() => {
@@ -54,7 +54,7 @@ const Hero = () => {
         <div className="hiding"><h1 className="text-[9vw] xl:text-8xl font-extrabold xl:w-[63%] tagline">Wonderland!</h1></div>
         <div className="flex gap-4 md:gap-8 py-6 md:py-10">
           <button className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold rounded-full text-white bg-pink-800 hover:bg-pink-700 transition-all duration-500">ORDER NOW</button>
-          <button className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold border-4 border-pink-900 rounded-full">KNOW MORE</button>
+          <Link href='/our-story' className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl xl:w-48 font-semibold border-4 border-pink-900 rounded-full">KNOW MORE</Link>
         </div>
       </div>
       <div className="img-div grid gap-10 pl-16 md:pl-0 justify-start md:justify-center xl:absolute top-0 xl:right-[300px]">
