@@ -1,11 +1,14 @@
 'use client'
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
+import { useEffect } from "react"
 
 const Hero = () => {
 
   useGSAP(() => {
 
+  })
+  useEffect(() => {
     Shery.mouseFollower({
       //Parameters are optional.
       skew: true,
@@ -41,7 +44,6 @@ const Hero = () => {
         y: yPos / 3
       })
     })
-
   })
 
   return (

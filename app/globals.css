@@ -58,6 +58,7 @@ nav ul li a {
   position: relative;
   transition: all 0.3s ease;
   font-family: "Roboto";
+  font-weight: 500;
 }
 nav ul li a:hover {
   color: rgb(0, 0, 0);

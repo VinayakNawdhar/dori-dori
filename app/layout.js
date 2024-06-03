@@ -51,6 +51,7 @@ export default function RootLayout({ children }) {
           href="https://db.onlinewebfonts.com/c/cfdb15a809da1e165116b60571ea4147?family=Absinette+W01+Regular"
           rel="stylesheet"
         ></link>
+       <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
         <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></Script>
         <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></Script>

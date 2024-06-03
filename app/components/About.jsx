@@ -1,6 +1,7 @@
 'use client'
 import { useGSAP } from '@gsap/react'
 import React from 'react'
+import Util1 from './utilities/Util1'
 
 const About = () => {
     useGSAP(() => {
@@ -38,6 +39,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Util1/>
         </section>
     )
 }
