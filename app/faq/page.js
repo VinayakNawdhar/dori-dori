@@ -1,6 +1,12 @@
 "use client";
 import React from "react";
-import Accordian from "../components/utilities/Accordian";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from "@chakra-ui/react";
 import { useState } from "react";
 import Navbar2 from "../components/utilities/Navbar2";
 const page = () => {
@@ -24,55 +30,55 @@ const page = () => {
       isOpen: false,
     },
     {
-        key : 4,
-        title: "How do I place an order?",
-        data : "You can order directly through our website by adding items to your cart and proceeding to checkout."
+      key: 4,
+      title: "How do I place an order?",
+      data: "You can order directly through our website by adding items to your cart and proceeding to checkout.",
     },
     {
-        key : 5,
-        title : "What payment methods do you accept?",
-        data : "Major credit cards, UPI, and additional safe payment options are accepted. "
+      key: 5,
+      title: "What payment methods do you accept?",
+      data: "Major credit cards, UPI, and additional safe payment options are accepted. ",
     },
     {
-        key: 6,
-        title : "How long does shipping take?",
-        data : "Shipping times vary based on your location and the shipping method selected. Standard shipping usually takes 5-8 business days."
+      key: 6,
+      title: "How long does shipping take?",
+      data: "Shipping times vary based on your location and the shipping method selected. Standard shipping usually takes 5-8 business days.",
     },
     {
-        key : 7,
-        title : "Can I customise my order?",
-        data : "Yes, we offer customization options for bulk orders, including personalized packaging and flavours. Contact us for more details."
+      key: 7,
+      title: "Can I customise my order?",
+      data: "Yes, we offer customization options for bulk orders, including personalized packaging and flavours. Contact us for more details.",
     },
     {
-        key : 8,
-        title : "Do you offer bulk discounts?",
-        data : "Yes, we provide discounts for large orders. Please contact our sales team for more information."
+      key: 8,
+      title: "Do you offer bulk discounts?",
+      data: "Yes, we provide discounts for large orders. Please contact our sales team for more information.",
     },
     {
-        key : 9,
-        title : "Can I order for special events or corporate gifts?",
-        data : "Absolutely! We cater to special events (Diwali, Christmas, & New Year’s), weddings, and corporate gifting. Reach out to us to discuss your requirements."
+      key: 9,
+      title: "Can I order for special events or corporate gifts?",
+      data: "Absolutely! We cater to special events (Diwali, Christmas, & New Year’s), weddings, and corporate gifting. Reach out to us to discuss your requirements.",
     },
     {
-        key : 10,
-        title : "What ingredients are used in your products?",
-        data : "Our marshmallows and cookies are made with high-quality ingredients. Each product listing includes a detailed ingredient list."
+      key: 10,
+      title: "What ingredients are used in your products?",
+      data: "Our marshmallows and cookies are made with high-quality ingredients. Each product listing includes a detailed ingredient list.",
     },
     {
-        key : 11,
-        title : "How do I find out about allergens?",
-        data : "All allergens are listed on the product descriptions. If you have specific allergy concerns, please contact us directly."
+      key: 11,
+      title: "How do I find out about allergens?",
+      data: "All allergens are listed on the product descriptions. If you have specific allergy concerns, please contact us directly.",
     },
     {
-        key : 12,
-        title : "How can I contact customer service?",
-        data : 'You can reach our customer service team via email at thedoridorii@gmail.com or by calling 7710020950 during business hours.'
+      key: 12,
+      title: "How can I contact customer service?",
+      data: "You can reach our customer service team via email at thedoridorii@gmail.com or by calling 7710020950 during business hours.",
     },
     {
-        key : 13,
-        title : "Do you have a physical store?",
-        data : "We currently operate online only, but we participate in various local markets and events. Follow us on social media to find out where we'll be next."
-    }
+      key: 13,
+      title: "Do you have a physical store?",
+      data: "We currently operate online only, but we participate in various local markets and events. Follow us on social media to find out where we'll be next.",
+    },
   ]);
 
   const toggleAccordion = (accordionkey) => {
@@ -95,15 +101,30 @@ const page = () => {
           Frequently Asked Questions
         </h2>
         <div className="mt-5">
-          {accordions.map((accordion) => (
-            <Accordian
-              key={accordion.key}
-              title={accordion.title}
-              data={accordion.data}
-              isOpen={accordion.isOpen}
-              toggleAccordion={() => toggleAccordion(accordion.key)}
-            />
-          ))}
+          <Accordion className="w-full" allowMultiple>
+            {accordions.map(ques => (
+                <AccordionItem id={ques.id} className="border-b border-gray-200 py-[17px]">
+                <h2>
+                  <AccordionButton className="flex justify-between font-semibold ">
+                    <span
+                      className="text-left font-['something']"
+                      flex="1"
+                      textAlign="left"
+                    >
+                      {ques.title}
+                    </span>
+                    <AccordionIcon className="text-left " />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel
+                  className="text-left text-medium mt-5 font-['something']"
+                  pb={4}
+                >
+                  {ques.data}
+                </AccordionPanel>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </div>
