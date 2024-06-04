@@ -16,7 +16,7 @@ const About = () => {
     })
     return (
         <section id='about' className='py-10 bg-white/70 flex flex-col gap-5 md:scroll-m-[110px] scroll-m-[80px]'>
-            <div className='flex items-center flex-wrap'>
+            <div className='flex items-center flex-wrap about-1'>
                 <div className='xl:w-1/2 flex flex-col px-8 xl:pl-32 gap-5 mb-10 md:mb-0'>
                     <h1 className='xl:w-[75%] text-left text-2xl md:text-5xl font-extrabold tracking-tighter font-[Archivo] uppercase'>From cookies to marshmallow , pure bliss.</h1>
                     <p className='xl:w-[85%] font-["Archivo"] tracking-tight opacity-75'>At Dori Dori, we bake the tastiest cookies and craft gourmet marshmallows. Our cookies are baked to perfection, with a crunchy exterior and a soft, chewy center. Each marshmallow is handcrafted using only the finest ingredients, resulting in fluffy clouds of sweetness that melt in your mouth.</p>
@@ -25,7 +25,7 @@ const About = () => {
                     <img src="/images/img-not-just.webp" className='mask-target w-full h-full object-cover object-center' alt="" />
                 </div>
             </div>
-            <div className='flex px-8 xl:flex-row-reverse flex-wrap items-center mt-10'>
+            <div className='flex px-8 xl:flex-row-reverse flex-wrap items-center mt-10 about-2'>
                 <div className='xl:w-1/2 flex flex-col gap-5 mb-10 md:mb-0'>
                     <h1 className='xl:w-[60%] text-left text-2xl md:text-5xl font-extrabold tracking-tighter font-[Archivo]'>NOT JUST ANOTHER BAKER.</h1>
                     <div>

@@ -25,7 +25,7 @@ const Footer = () => {
                     <p>Have a question about our products or need assistance with your order?
                         Our friendly team is here to help!
                     </p>
-                    <a className='font-semibold' href="tel:123456789"><i className="ri-phone-fill"></i> 123456789</a>
+                    <a className='font-semibold' href="tel:+91 7710020950"><i className="ri-phone-fill"></i> +91 7710020950</a>
                     <p className='mt-5'>
                         Reach out to us via phone, email, or social media, and we'll be happy to assist you.
                     </p>

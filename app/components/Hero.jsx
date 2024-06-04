@@ -1,13 +1,61 @@
 'use client'
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react"
 import Link from "next/link"
 const Hero = () => {
-
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    if (window.screen.width > 790) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#product',
+          markers: false,
+          start: "-25% 0%",
+          end: "50% 100%",
 
-  })
+        }
+      })
+      tl.from('#product h1', {
+        opacity: 0
+      })
+      tl.from('#product h3', {
+        opacity: 0
+      })
+      tl.from('#gm .product', {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        ease: "expo.inOut"
+      })
+      tl.from('#nysc .product', {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        ease: "expo.inOut"
+      })
+
+
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 30%",
+          end: "80% 100%",
+          markers: false
+        }
+      })
+      tl2.from('.about-1', {
+        x: "-100px",
+        opacity: 0
+      })
+      tl2.from('.about-2', {
+        x: "100px",
+        opacity: 0,
+        delay: 0.2
+      })
+    }
+  });
   useEffect(() => {
     Shery.mouseFollower({
       //Parameters are optional.
@@ -15,7 +63,7 @@ const Hero = () => {
       ease: "cubic-bezier(0.23, 1, 0.320, 1)",
       duration: 0.1,
     });
-    
+
 
     gsap.to('.hiding h1', {
       y: '0%',

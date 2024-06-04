@@ -96,8 +96,8 @@ const page = () => {
   return (
     <div>
       <Navbar2 />
-      <div className="pt-[80px] md:pt-[110px] px-2 md:px-20 py-5">
-        <h2 className="text-2xl mb-2 mx-auto text-[var(--font-color)] pt-5">
+      <div className="pt-[80px] md:pt-[110px] px-2 md:px-32 py-5">
+        <h2 className="text-2xl md:text-3xl mb-2 font-['Outfit'] mx-auto text-[var(--font-color)] pt-16 pb-4 text-center">
           Frequently Asked Questions
         </h2>
         <div className="mt-5">
@@ -107,7 +107,7 @@ const page = () => {
                 <h2>
                   <AccordionButton className="flex justify-between font-semibold ">
                     <span
-                      className="text-left font-['something']"
+                      className="text-left text-sm md:text-[15.5px] font-['something']"
                       flex="1"
                       textAlign="left"
                     >
@@ -117,7 +117,7 @@ const page = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel
-                  className="text-left text-medium mt-5 font-['something']"
+                  className="text-left text-sm md:text-[15.5px] mt-5 font-['something']"
                   pb={4}
                 >
                   {ques.data}
