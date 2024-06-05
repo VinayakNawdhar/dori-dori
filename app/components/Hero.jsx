@@ -45,10 +45,13 @@ const Hero = () => {
           markers: false
         }
       })
+      tl2.from('#about',{
+        background : "#FDEEEC"
+      },'a')
       tl2.from('.about-1', {
         x: "-100px",
         opacity: 0
-      })
+      },'a')
       tl2.from('.about-2', {
         x: "100px",
         opacity: 0,
