@@ -41,7 +41,7 @@ const Navbar = () => {
     const [nav, setnav] = useState(false)
     return (
         <nav className='flex py-3 h-[80px] md:h-[110px] bg-pink-50 shadow-md justify-between items-center px-32 fixed w-full z-[100]'>
-            <ul className='md:flex gap-10 text-gray-600 hidden'>
+            <ul className='lg:flex gap-10 text-gray-600 hidden'>
                 <li className='font-[400] text-xl'>
                     <Link className='scroll-links' href='#hero'>Home</Link>
                 </li>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </li>
             </ul>
             {
-                nav == true ? <button className='md:hidden' onClick={() => {
+                nav == true ? <button className='lg:hidden' onClick={() => {
                     setnav(false)
                     gsap.to('.mob-nav', {
                         x: '-100%',
@@ -66,7 +66,7 @@ const Navbar = () => {
                     })
                 }}>
                     <i className="text-[var(--secondary-color)] ri-menu-unfold-2-line text-3xl absolute left-5 top-1/2 translate-y-[-50%]"></i>
-                </button> : <button className='md:hidden' onClick={() => {
+                </button> : <button className='lg:hidden' onClick={() => {
                     setnav(true)
                     gsap.to('.mob-nav', {
                         x: '0',
@@ -114,7 +114,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <Image src='/images/dori-dori.png' width={100} height={100} className='magnet-target absolute left-1/2 translate-x-[-50%] h-[60px] w-[70px] md:h-[100px] md:w-[120px]'></Image>
-            <ul className='md:flex gap-10 text-gray-600 w-[300px] hidden'>
+            <ul className='lg:flex gap-10 text-gray-600 w-[300px] hidden'>
                 <li className='font-[400] text-xl'>
                     <Link className='scroll-links' href='#about'>About</Link>
                 </li>
