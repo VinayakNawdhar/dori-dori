@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "At Dori Dori, we bake the tastiest cookies and craft gourmet marshmallows. Our cookies are baked to perfection, with a crunchy exterior and a soft, chewy center. Each marshmallow is handcrafted using only the finest ingredients, resulting in fluffy clouds of sweetness that melt in your mouth. Whether you're indulging in our classic Strawberry Cheesecake or savoring our unique marshmallow flavors like toasted coconut or salted caramel, every bite is a delicious experience. We take pride in our artisanal approach, ensuring that every batch is made with love and care.",
 };
-
+import Link from "next/link";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -51,19 +51,43 @@ export default function RootLayout({ children }) {
           href="https://db.onlinewebfonts.com/c/cfdb15a809da1e165116b60571ea4147?family=Absinette+W01+Regular"
           rel="stylesheet"
         ></link>
-       <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></Script>
-        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></Script>
-        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></Script>
-        <Script strategy="beforeInteractive" src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></Script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/sheryjs/dist/Shery.css"
+        />
+        <Script
+          strategy="beforeInteractive"
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        ></Script>
+        <Script
+          strategy="beforeInteractive"
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        ></Script>
+        <Script
+          strategy="beforeInteractive"
+          src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"
+        ></Script>
+        <Script
+          strategy="beforeInteractive"
+          src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"
+        ></Script>
         <Script
           type="text/javascript"
           strategy="beforeInteractive"
           src="https://unpkg.com/sheryjs/dist/Shery.js"
         ></Script>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Link href={`https://wa.me/7710020950?text=I'm%20interested%20in%20your%product%20for%20order`} target="_blank">
+          <img src="/images/wa.png" className="rounded-full fixed z-[999999] bottom-5 right-3 h-14 w-14 object-cover shadow-xl p-2 shadow-gray-400" />
+      
+        </Link>
+        </body>
     </html>
   );
 }
