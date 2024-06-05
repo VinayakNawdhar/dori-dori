@@ -54,6 +54,53 @@ const Hero = () => {
         opacity: 0,
         delay: 0.2
       })
+    }else{
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#product',
+          markers: false,
+          start: "-45% 0%",
+          end: "50% 100%",
+
+        }
+      })
+      tl.from('#product h1', {
+        opacity: 0
+      })
+      tl.from('#product h3', {
+        opacity: 0
+      })
+      tl.from('#gm .product', {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        ease: "expo.inOut"
+      })
+      tl.from('#nysc .product', {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        ease: "expo.inOut"
+      })
+
+
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#about",
+          start: "-0% 30%",
+          end: "80% 100%",
+          markers: false
+        }
+      })
+      tl2.from('.about-1', {
+        y: "100px",
+        opacity: 0
+      })
+      tl2.from('.about-2', {
+        y: "100px",
+        opacity: 0,
+        delay: 0.8 
+      })
     }
   });
   useEffect(() => {
@@ -101,8 +148,8 @@ const Hero = () => {
         <div className="hiding"><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] text-pink-800 tagline">Dori Dori</h1></div>
         <div className="hiding"><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] tagline">Wonderland!</h1></div>
         <div className="flex gap-4 md:gap-8 py-6 md:py-10">
-          <button className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl md:w-48 font-semibold rounded-full text-white bg-pink-800 hover:bg-pink-700 transition-all duration-500">ORDER NOW</button>
-          <Link href='/our-story' className="px-4 w-60 py-2 md:px-8 md:py-6 text-sm md:text-xl md:w-48 font-semibold border-4 border-pink-900 rounded-full">KNOW MORE</Link>
+          <button className="px-4 w-60 py-2 md:px-6 text-sm md:text-md md:w-52 font-semibold rounded-full text-white text-center bg-pink-800 hover:bg-pink-700 transition-all duration-500">ORDER NOW</button>
+          <Link href='/our-story' className="px-4 w-60 py-2 md:px-8 md:py-4 text-sm md:text-md md:w-52 font-semibold border-4 border-pink-900 rounded-full text-center">KNOW MORE</Link>
         </div>
       </div>
       <div className="img-div grid gap-10 pl-16 md:pl-0 justify-start md:justify-center xl:absolute top-0 xl:right-[300px]">

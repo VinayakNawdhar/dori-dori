@@ -3,8 +3,6 @@ import React, { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 const Products = () => {
-    useGSAP(() => {
-    })
     return (
         <section id='product' className='min-h-screen mt-14 md:mt-0 md:pt-32 pb-8 scroll-m-[120px] md:scroll-m-0'>
             <h1 className='text-4xl md:text-6xl text-center font-extrabold tracking-tighter text-black/85 mb-5 px-5'>Indulge Your Craving!</h1>
