@@ -5,7 +5,7 @@ const Footer = () => {
         <section id='footer' className='md:scroll-m-[110px] scroll-m-[80px] bg-[#FDF2F8]'>
             <div className='flex flex-wrap p-10 gap-5 justify-evenly'>
                 <div className='flex flex-col items-center'>
-                    <img className='h-48' src="/images/dori-dori.png" alt="" />
+                    <img className='h-32 md:h-48' src="/images/dori-dori.png" alt="" />
                     <img className='h-48 xl:flex hidden' src="https://media3.giphy.com/media/L3u3WyrmJXR5QtiDhL/giphy.gif?cid=6c09b952paqx1a367f8fbai70wsah65206doonp5wpn9t4qh&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="" />
                 </div>
                 <div className='w-96 xl:mt-10'>

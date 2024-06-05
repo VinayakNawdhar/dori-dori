@@ -4,8 +4,8 @@ import React from 'react'
 
 const Testimonial = () => {
     return (
-        <section id='reviews' className="bg-white/90 py-16 md:scroll-m-[110px] scroll-m-[80px]">
-            <h1 className='text-3xl xl:text-5xl font-extrabold text-center font-["Outfit"] tracking-tighter drop-shadow-2xl'>WHAT OUR CUSTOMER SAYS</h1>
+        <section id='reviews' className="bg-pink-100/30 pb-16 pt-10 md:scroll-m-[110px] scroll-m-[80px]">
+            <h1 className='px-10 text-2xl xl:text-5xl font-extrabold text-center font-["Outfit"] tracking-tighter drop-shadow-2xl'>WHAT OUR CUSTOMER SAYS</h1>
             <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 flex gap-8 md:flex-wrap items-stretch overflow-x-scroll md:overflow-auto">
                 {testimonials.map(test => (
                     <figure key={test.id} className="hover-target bg-[#FEFAF9] min-w-[250px] h-[300px] p-4 rounded-2xl shadow-2xl xl:h-96 xl:w-96 relative pb-20 xl:pb-0">

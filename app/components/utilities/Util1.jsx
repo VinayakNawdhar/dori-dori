@@ -2,7 +2,7 @@ import React from 'react'
 
 const Util1 = () => {
   return (
-    <div className='min-h-[300px] flex flex-wrap gap-8 justify-evenly py-16'>
+    <div className='min-h-[300px] flex flex-wrap gap-8 justify-evenly pt-16'>
         <div className='flex flex-col gap-3 w-[300px] justify-start items-center'>
             <img className=' w-[55px]' src="/images/hand-love.avif" alt="" />
             <h1 className='text-lg font-semibold font-["Archivo"]'>Handmade</h1>
