@@ -83,12 +83,12 @@ const Navbar = () => {
                     <i className="text-[var(--secondary-color)] ri-menu-fold-2-line text-3xl absolute left-5 top-1/2 translate-y-[-50%]"></i>
                 </button>
             }
-            <div className='h-screen bg-pink-50 w-full absolute left-0 top-[80px] md:top-[110px] mob-nav translate-x-[-100%]'>
+            <div className='min-h-screen bg-pink-50 w-full absolute left-0 top-[80px] md:top-[110px] mob-nav translate-x-[-100%]'>
                 <ul className='flex flex-col gap-3'>
-                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
+                    <li className='font-[400] tracking-wide text-xl p-4 border-b-4 border-pink-400/10'>
                         <Link className='scroll-links' href='#hero'>Home</Link>
                     </li>
-                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10 group'>
+                    <li className='font-[400] tracking-wide text-xl p-4 border-b-4 border-pink-400/10 group'>
                         <Link className='' href=''>Flavours <i className="ri-arrow-down-s-fill"></i></Link>
                         <div className='bg-white py-2 left-[10%] rounded-xl shadow-xl hidden flex-col gap-1 top-10 group-hover:opacity-100 group-hover:flex opacity-0 transition-all duration-50 origin-top'>
                             <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='#gm'>Gourmet Marshmallows</Link>
@@ -96,19 +96,19 @@ const Navbar = () => {
                             <Link className='py-1 scroll-links hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='#product'>Shop All</Link>
                         </div>
                     </li>
-                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
+                    <li className='font-[400] tracking-wide text-xl p-4 border-b-4 border-pink-400/10'>
                         <Link href='/our-story'>Our Story</Link>
                     </li>
-                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
+                    <li className='font-[400] tracking-wide text-xl p-4 border-b-4 border-pink-400/10'>
                         <Link href='/corporate-gifting'>Corporate Gifting</Link>
                     </li>
-                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
+                    <li className='font-[400] tracking-wide text-xl p-4 border-b-4 border-pink-400/10'>
                         <Link className='scroll-links' href='#about'>About</Link>
                     </li>
-                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
+                    <li className='font-[400] tracking-wide text-xl p-4 border-b-4 border-pink-400/10'>
                         <Link className='scroll-links' href='#reviews'>Reviews</Link>
                     </li>
-                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10  group dropdown'>
+                    <li className='font-[400] tracking-wide text-xl p-4 border-b-4 border-pink-400/10  group dropdown'>
                         <Link className='' href='/'>Support <i className="ri-arrow-down-s-fill"></i></Link>
                         <div className='bg-white py-2 left-[10%] rounded-xl shadow-xl hidden flex-col gap-1 top-10 group-hover:opacity-100 group-hover:flex opacity-0 transition-all duration-50 origin-top'>
                             <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/faq'>FAQ's</Link>
