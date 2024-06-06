@@ -96,9 +96,9 @@ const Navbar2 = () => {
                     <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10  group dropdown'>
                         <Link className='' href=''>Support <i className="ri-arrow-down-s-fill"></i></Link>
                         <div className='bg-white py-2 left-[10%] rounded-xl shadow-xl hidden flex-col gap-1 top-10 group-hover:opacity-100 group-hover:flex opacity-0 transition-all duration-50 origin-top'>
-                            <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/'>FAQ's</Link>
-                            <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/'>Shipping policy</Link>
-                            <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/'>Careers</Link>
+                            <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/faq'>FAQ's</Link>
+                            <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/shipping-policy'>Shipping policy</Link>
+                            <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/careers'>Careers</Link>
                             <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='#footer'>Contact Us</Link>
                         </div>
                     </li>
@@ -115,9 +115,9 @@ const Navbar2 = () => {
                 <li className='font-[400] text-xl relative group'>
                     <Link className='' href=''>Support <i className="ri-arrow-down-s-fill"></i></Link>
                     <div className='bg-white py-2 left-[-20%] rounded-xl w-[170px] shadow-xl absolute flex flex-col gap-1 top-10 group-hover:opacity-100 group-hover:scale-y-100 scale-y-0 opacity-0 transition-all duration-50 origin-top'>
-                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/'>FAQ's</Link>
-                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/'>Shipping policy</Link>
-                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/'>Careers</Link>
+                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/'faq>FAQ's</Link>
+                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/shipping-policy'>Shipping policy</Link>
+                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/careers'>Careers</Link>
                         <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#footer'>Contact Us</Link>
                     </div>
                 </li>
