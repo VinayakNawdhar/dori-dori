@@ -81,8 +81,6 @@ nav ul li a::before {
 /* Hero  */
 #hero {
   width: 100%;
-  /* background: linear-gradient(135deg, #d6ccd6b4, #e4c8d6, #d8a8c0, #d9aec4, #eac8c8); */
-  /* background-color: #FFD8D8; */
   color: var(--font-color);
 }
 .tagline {
@@ -94,9 +92,6 @@ nav ul li a::before {
 }
 .hiding {
   overflow: hidden;
-}
-.hiding h1 {
-  transform: translateY(100%);
 }
 
 /* Products   */

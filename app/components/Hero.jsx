@@ -4,106 +4,112 @@ import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react"
 import Link from "next/link"
+import { useDispatch, useSelector } from "react-redux";
+import { setRunOnce } from "@/redux/cartSlice";
 const Hero = () => {
+  const { runOnce } = useSelector(store => store.cart)
+  const dispatch = useDispatch();
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-    if (window.screen.width > 790) {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '#product',
-          markers: false,
-          start: "-25% 0%",
-          end: "50% 100%",
+    if (!runOnce) {
+      if (window.screen.width > 790) {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: '#product',
+            markers: false,
+            start: "-25% 0%",
+            end: "50% 100%",
 
-        }
-      })
-      tl.from('#product h1', {
-        opacity: 0
-      })
-      tl.from('#product h3', {
-        opacity: 0
-      })
-      tl.from('#gm .product', {
-        opacity: 0,
-        y: 50,
-        stagger: 0.2,
-        ease: "expo.inOut"
-      })
-      tl.from('#nysc .product', {
-        opacity: 0,
-        y: 50,
-        stagger: 0.2,
-        ease: "expo.inOut"
-      })
-
-
-      const tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#about",
-          start: "top 30%",
-          end: "80% 100%",
-          markers: false
-        }
-      })
-      tl2.from('#about',{
-        background : "#FDEEEC"
-      },'a')
-      tl2.from('.about-1', {
-        x: "-100px",
-        opacity: 0
-      },'a')
-      tl2.from('.about-2', {
-        x: "100px",
-        opacity: 0,
-        delay: 0.2
-      })
-    }else{
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '#product',
-          markers: false,
-          start: "-45% 0%",
-          end: "50% 100%",
-
-        }
-      })
-      tl.from('#product h1', {
-        opacity: 0
-      })
-      tl.from('#product h3', {
-        opacity: 0
-      })
-      tl.from('#gm .product', {
-        opacity: 0,
-        y: 50,
-        stagger: 0.2,
-        ease: "expo.inOut"
-      })
-      tl.from('#nysc .product', {
-        opacity: 0,
-        y: 50,
-        stagger: 0.2,
-        ease: "expo.inOut"
-      })
+          }
+        })
+        tl.from('#product h1', {
+          opacity: 0
+        })
+        tl.from('#product h3', {
+          opacity: 0
+        })
+        tl.from('#gm .product', {
+          opacity: 0,
+          y: 50,
+          stagger: 0.2,
+          ease: "expo.inOut"
+        })
+        tl.from('#nysc .product', {
+          opacity: 0,
+          y: 50,
+          stagger: 0.2,
+          ease: "expo.inOut"
+        })
 
 
-      const tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#about",
-          start: "-0% 30%",
-          end: "80% 100%",
-          markers: false
-        }
-      })
-      tl2.from('.about-1', {
-        y: "100px",
-        opacity: 0
-      })
-      tl2.from('.about-2', {
-        y: "100px",
-        opacity: 0,
-        delay: 0.8 
-      })
+        const tl2 = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#about",
+            start: "top 30%",
+            end: "80% 100%",
+            markers: false
+          }
+        })
+        tl2.from('#about', {
+          background: "#FDEEEC"
+        }, 'a')
+        tl2.from('.about-1', {
+          x: "-100px",
+          opacity: 0
+        }, 'a')
+        tl2.from('.about-2', {
+          x: "100px",
+          opacity: 0,
+          delay: 0.2
+        })
+      } else {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: '#product',
+            markers: false,
+            start: "-45% 0%",
+            end: "50% 100%",
+
+          }
+        })
+        tl.from('#product h1', {
+          opacity: 0
+        })
+        tl.from('#product h3', {
+          opacity: 0
+        })
+        tl.from('#gm .product', {
+          opacity: 0,
+          y: 50,
+          stagger: 0.2,
+          ease: "expo.inOut"
+        })
+        tl.from('#nysc .product', {
+          opacity: 0,
+          y: 50,
+          stagger: 0.2,
+          ease: "expo.inOut"
+        })
+
+
+        const tl2 = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#about",
+            start: "-0% 30%",
+            end: "80% 100%",
+            markers: false
+          }
+        })
+        tl2.from('.about-1', {
+          y: "100px",
+          opacity: 0
+        })
+        tl2.from('.about-2', {
+          y: "100px",
+          opacity: 0,
+          delay: 0.8
+        })
+      }
     }
   });
   useEffect(() => {
@@ -113,23 +119,20 @@ const Hero = () => {
       ease: "cubic-bezier(0.23, 1, 0.320, 1)",
       duration: 0.1,
     });
-
-
-    gsap.to('.hiding h1', {
-      y: '0%',
-      opacity: 1,
-      stagger: 0.5,
-      ease: "Power1.easeInOut",
-      duration: 0.8,
-      delay: 1
-    })
-    gsap.to('nav', {
-      y: '0%',
-      opacity: 1,
-      ease: "Power1.easeInOut",
-      duration: 1
-    })
-
+  })
+  useGSAP(() => {
+    if(!runOnce){
+      gsap.from('.hiding h1',{
+        y : "100%",
+        stagger : 0.5,
+        ease : "Power1.easeInOut",
+        onComplete : () => {
+          dispatch(setRunOnce({runOnce : true}))
+        }
+      })
+    }
+  })
+  useEffect(() => {
     document.querySelector('#hero').addEventListener("mousemove", function (e) {
       const { clientX, clientY } = e;
       const { clientWidth, clientHeight } = document.querySelector('#hero');
