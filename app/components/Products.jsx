@@ -9,7 +9,7 @@ const Products = () => {
             <h3 className='text-center font-semibold text-md md:text-xl tracking-tighter'>because sometimes you deserve a treat.</h3>
             <div id='gm' className='px-2 py-3 md:px-10 md:py-4 bg-pink-100/30 mx-5 rounded-xl mt-8'>
                 <h1 className='text-2xl xl:text-5xl mb-10 font-medium font-["Outfit"] opacity-75'>Gourmet Marshmallows</h1>
-                <div className='w-full flex overflow-x-scroll overflow-y-hidden md:flex-wrap gap-5 md:gap-8 md:justify-center'>
+                <div className='w-full flex overflow-x-scroll md:overflow-auto overflow-y-hidden md:flex-wrap gap-5 md:gap-8 md:justify-center'>
                     <div className='min-w-[200px] h-[200px] xl:w-[350px] xl:h-[350px] overflow-hidden relative product rounded-xl'>
                         <div className='w-full h-full overflow-hidden product-img '>
                             <img className='img h-full w-full object-cover object-center transition-all duration-500' src="/images/blueberry-gourmet-marshmallow.jpg" alt="" />
@@ -50,7 +50,7 @@ const Products = () => {
             </div>
             <div id='nysc' className='px-2 py-3 xl:px-10 xl:py-4 bg-red-800/5 mx-5 rounded-xl mt-8'>
                 <h1 className='text-2xl xl:text-5xl mb-10 font-medium font-["Outfit"] opacity-75'>New York Style Cookies </h1>
-                <div className='flex overflow-x-scroll overflow-y-hidden md:flex-wrap gap-5 md:gap-8 md:justify-center'>
+                <div className='flex overflow-x-scroll md:overflow-auto overflow-y-hidden md:flex-wrap gap-5 md:gap-8 md:justify-center'>
                     <div className='min-w-[200px] h-[200px] xl:w-[350px] xl:h-[350px] overflow-hidden relative product rounded-xl'>
                         <div className='w-full h-full overflow-hidden product-img '>
                             <img className='h-full w-full object-cover object-center transition-all duration-500' src="/images/chocochip-walnut-cookie.jpg" alt="" />

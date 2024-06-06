@@ -14,20 +14,17 @@ const page = () => {
     {
       key: 1,
       title: "What types of marshmallows and cookies do you offer?",
-      data: `We have a range of marshmallows & cookies available; for more information, visit the website's flavours section.`,
-      isOpen: false,
+      data: `We have a range of marshmallows & cookies available; for more information, visit the website's flavours section.`
     },
     {
       key: 2,
       title: "Do you have vegan options?",
       data: `We are developing a line of vegan marshmallows; stay tuned to our social media accounts to learn when they are available!`,
-      isOpen: false,
     },
     {
       key: 3,
       title: "How should I store marshmallows and cookies?",
       data: `Store marshmallows in an airtight container at room temperature. Cookies should also be stored in an airtight container; they can be kept at room temperature or in the refrigerator for extended freshness.`,
-      isOpen: false,
     },
     {
       key: 4,

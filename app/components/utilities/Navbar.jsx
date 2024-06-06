@@ -108,7 +108,7 @@ const Navbar = () => {
                             <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/faq'>FAQ's</Link>
                             <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/shipping-policy'>Shipping policy</Link>
                             <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/careers'>Careers</Link>
-                            <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='#footer'>Contact Us</Link>
+                            <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/contact-us'>Contact Us</Link>
                         </div>
                     </li>
                 </ul>
@@ -127,7 +127,7 @@ const Navbar = () => {
                         <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/faq'>FAQ's</Link>
                         <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/shipping-policy'>Shipping policy</Link>
                         <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/careers'>Careers</Link>
-                        <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='#footer'>Contact Us</Link>
+                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/contact-us'>Contact Us</Link>
                     </div>
                 </li>
             </ul>

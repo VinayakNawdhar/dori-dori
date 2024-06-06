@@ -99,7 +99,7 @@ const Navbar2 = () => {
                             <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/faq'>FAQ's</Link>
                             <Link className='py-1 hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/shipping-policy'>Shipping policy</Link>
                             <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/careers'>Careers</Link>
-                            <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='#footer'>Contact Us</Link>
+                            <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/contact-us'>Contact Us</Link>
                         </div>
                     </li>
                 </ul>
@@ -115,10 +115,10 @@ const Navbar2 = () => {
                 <li className='font-[400] text-xl relative group'>
                     <Link className='' href=''>Support <i className="ri-arrow-down-s-fill"></i></Link>
                     <div className='bg-white py-2 left-[-20%] rounded-xl w-[170px] shadow-xl absolute flex flex-col gap-1 top-10 group-hover:opacity-100 group-hover:scale-y-100 scale-y-0 opacity-0 transition-all duration-50 origin-top'>
-                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/'faq>FAQ's</Link>
+                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/faq'>FAQ's</Link>
                         <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/shipping-policy'>Shipping policy</Link>
                         <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/careers'>Careers</Link>
-                        <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#footer'>Contact Us</Link>
+                        <Link className='py-1  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/contact-us'>Contact Us</Link>
                     </div>
                 </li>
             </ul>
