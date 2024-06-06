@@ -56,6 +56,9 @@ const Navbar = () => {
                 <li className='font-[400] text-xl'>
                     <Link href='/our-story'>Our Story</Link>
                 </li>
+                <li className='font-[400] text-xl'>
+                    <Link href='/corporate-gifting'>Corporate Gifting</Link>
+                </li>
             </ul>
             {
                 nav == true ? <button className='lg:hidden' onClick={() => {
@@ -97,6 +100,9 @@ const Navbar = () => {
                         <Link href='/our-story'>Our Story</Link>
                     </li>
                     <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
+                        <Link href='/corporate-gifting'>Corporate Gifting</Link>
+                    </li>
+                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
                         <Link className='scroll-links' href='#about'>About</Link>
                     </li>
                     <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
@@ -113,7 +119,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <Image src='/images/dori-dori.png' width={100} height={100} className='magnet-target absolute left-1/2 translate-x-[-50%] h-[60px] w-[70px] md:h-[100px] md:w-[120px]'></Image>
+            <Image src='/images/dori-dori.png' width={100} height={100} className='magnet-target absolute left-[52%] translate-x-[-50%] h-[60px] w-[70px] md:h-[100px] md:w-[120px]'></Image>
             <ul className='lg:flex gap-10 text-gray-600 w-[300px] hidden'>
                 <li className='font-[400] text-xl'>
                     <Link className='scroll-links' href='#about'>About</Link>

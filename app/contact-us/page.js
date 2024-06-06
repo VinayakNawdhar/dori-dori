@@ -35,7 +35,7 @@ const page = () => {
           <form className="md:w-2/3 h-[500px] font-['Archivo']" onSubmit={handleFormSubmit} >
             <h1 className="font-semibold text-lg">Send us an email</h1>
             <p className="">We'd love to hear from you! If your question is about the status of your order please check our FAQs and wait the full estimated processing/delivery times before contacting us</p>
-            <div className="w-full my-5 flex gap-5">
+            <div className="w-full my-5 flex gap-2 lg:gap-5">
                 <input required value={name} onChange={e => setName(e.target.value)} className=" focus:outline-none w-full p-2 border-2" type="text" placeholder="Name" />
                 <input required value={email} onChange={e => setEmail(e.target.value)} className=" focus:outline-none w-full p-2 border-2" type="text" placeholder="Email" />
             </div>

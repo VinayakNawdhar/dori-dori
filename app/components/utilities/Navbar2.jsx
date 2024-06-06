@@ -45,7 +45,10 @@ const Navbar2 = () => {
                     </div>
                 </li>
                 <li className='font-[400] text-xl'>
-                    <Link href=''>Our Story</Link>
+                    <Link href='/our-story'>Our Story</Link>
+                </li>
+                <li className='font-[400] text-xl'>
+                    <Link href='/corporate-gifting'>Corporate Gifting</Link>
                 </li>
             </ul>
             {
@@ -86,6 +89,9 @@ const Navbar2 = () => {
                     </li>
                     <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
                         <Link href='/our-story'>Our Story</Link>
+                    </li>
+                    <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
+                        <Link href='/corporate-gifting'>Corporate Gifting</Link>
                     </li>
                     <li className='font-[400] tracking-wide text-2xl p-4 border-b-4 border-pink-400/10'>
                         <Link className='scroll-links' href='/#about'>About</Link>
