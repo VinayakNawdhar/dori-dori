@@ -7,16 +7,16 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 const Navbar2 = () => {
     useGSAP(() => {
-        Shery.makeMagnet(".magnet-target" /* Element to target.*/, {
-            //Parameters are optional.
-            ease: "cubic-bezier(0.12, 0, 0.39, 0)",
-            duration: 1,
-        });
-        Shery.makeMagnet(".scroll-links" /* Element to target.*/, {
-            //Parameters are optional.
-            ease: "cubic-bezier(0.12, 0, 0.39, 0)",
-            duration: 100,
-        });
+        // Shery.makeMagnet(".magnet-target" /* Element to target.*/, {
+        //     //Parameters are optional.
+        //     ease: "cubic-bezier(0.12, 0, 0.39, 0)",
+        //     duration: 1,
+        // });
+        // Shery.makeMagnet(".scroll-links" /* Element to target.*/, {
+        //     //Parameters are optional.
+        //     ease: "cubic-bezier(0.12, 0, 0.39, 0)",
+        //     duration: 100,
+        // });
         document.querySelectorAll('.mob-nav .scroll-links').forEach(elem => {
             elem.addEventListener('click', function (e) {
                 setnav(false)
@@ -40,7 +40,7 @@ const Navbar2 = () => {
                     <Link className='scroll-links' href='/#product'>Flavours <i className="ri-arrow-down-s-fill"></i></Link>
                     <div className='bg-white py-2 left-[-20%] rounded-xl w-[170px] shadow-xl absolute flex flex-col gap-1 top-10 group-hover:opacity-100 group-hover:scale-y-100 scale-y-0 opacity-0 transition-all duration-50 origin-top'>
                         <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#gm'>Gourmet Marshmallows</Link>
-                        <Link className='py-1 scroll-links hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#nysc'>Big Chunky Cookies</Link>
+                        <Link className='py-1 scroll-links hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#nysc'>Big Cookies</Link>
                         <Link className='py-1 scroll-links hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#product'>Shop All</Link>
                     </div>
                 </li>
@@ -83,7 +83,7 @@ const Navbar2 = () => {
                         <Link className='' href=''>Flavours <i className="ri-arrow-down-s-fill"></i></Link>
                         <div className='bg-white py-2 left-[10%] rounded-xl shadow-xl hidden flex-col gap-1 top-10 group-hover:opacity-100 group-hover:flex opacity-0 transition-all duration-50 origin-top'>
                             <Link className='py-1 scroll-links  hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#gm'>Gourmet Marshmallows</Link>
-                            <Link className='py-1 scroll-links hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#nysc'>Big Chunky Cookies</Link>
+                            <Link className='py-1 scroll-links hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#nysc'>Big Cookies</Link>
                             <Link className='py-1 scroll-links hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='/#product'>Shop All</Link>
                         </div>
                     </li>

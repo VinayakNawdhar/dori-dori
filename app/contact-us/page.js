@@ -49,7 +49,7 @@ const page = () => {
             </div>
             <div className="flex flex-col gap-1 my-6">
               <h1 className="font-['Outfit'] font-semibold">Email</h1>
-              <p className="font-['Outfit']">help@doridori.in</p>
+              <p className="font-['Outfit']">naman@doridori.in</p>
             </div>
             <div className="flex flex-col gap-1 my-6">
               <h1 className="font-['Outfit'] font-semibold">Phone</h1>

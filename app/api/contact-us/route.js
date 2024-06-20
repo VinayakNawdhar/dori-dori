@@ -12,7 +12,7 @@ export async function POST(req, res) {
   try {
     await transporter.sendMail({
       from: "vinayaknawdhar003@gmail.com",
-      to: "thedoridorii@gmail.com",
+      to: "naman@doridori.in",
       subject: "DoriDori Contact Us",
       text: `Name : ${request.name} \n Email: ${request.email} \n Message : ${request.message} `,
     });

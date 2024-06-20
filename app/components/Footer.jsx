@@ -29,7 +29,7 @@ const Footer = () => {
                     <p className='mt-5'>
                         Reach out to us via phone, email, or social media, and we'll be happy to assist you.
                     </p>
-                    <a className='font-semibold' href="mailto:help@doridori.com"><i className="ri-mail-fill"></i> help@doridori.com</a>
+                    <a className='font-semibold' href="mailto:help@doridori.com"><i className="ri-mail-fill"></i> naman@doridori.in</a>
                     <p className='mt-5'>
                         Your satisfaction is our top priority at Dori Dori, and we're committed to making your experience delightful.
                     </p>
