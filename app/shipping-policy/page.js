@@ -11,7 +11,7 @@ const page = () => {
         </h1>
         <div>
           <div className="grid gap-3 my-10">
-            <h1 className='text-xl md:text-3xl font-semibold font-["Outfit"]'>
+            <h1 className='text-xl md:text-3xl font-light font-["Outfit"]'>
               Order Processing
             </h1>
             <p className='text-sm md:text-md font-["Outfit"]'>
@@ -20,7 +20,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid gap-3 my-10">
-            <h1 className='text-xl md:text-3xl font-semibold font-["Outfit"]'>
+            <h1 className='text-xl md:text-3xl font-light font-["Outfit"]'>
               Shipping Methods and Delivery Times
             </h1>
             <p className='text-sm md:text-md font-["Outfit"]'>
@@ -32,7 +32,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid gap-3 my-10">
-            <h1 className='text-xl md:text-3xl font-semibold font-["Outfit"]'>
+            <h1 className='text-xl md:text-3xl font-light font-["Outfit"]'>
               Perishable Items
             </h1>
             <p className='text-sm md:text-md font-["Outfit"]'>
@@ -42,7 +42,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid gap-3 my-10">
-            <h1 className='text-xl md:text-3xl font-semibold font-["Outfit"]'>
+            <h1 className='text-xl md:text-3xl font-light font-["Outfit"]'>
               Shipping Restrictions
             </h1>
             <p className='text-sm md:text-md font-["Outfit"]'>
@@ -50,7 +50,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid gap-3 my-10">
-            <h1 className='text-xl md:text-3xl font-semibold font-["Outfit"]'>
+            <h1 className='text-xl md:text-3xl font-light font-["Outfit"]'>
               Order Tracking
             </h1>
             <p className='text-sm md:text-md font-["Outfit"]'>
@@ -60,7 +60,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid gap-3 my-10">
-            <h1 className='text-xl md:text-3xl font-semibold font-["Outfit"]'>
+            <h1 className='text-xl md:text-3xl font-light font-["Outfit"]'>
               Delivery Issues
             </h1>
             <p className='text-sm md:text-md font-["Outfit"]'>
@@ -71,7 +71,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid gap-3 my-10">
-            <h1 className='text-xl md:text-3xl font-semibold font-["Outfit"]'>
+            <h1 className='text-xl md:text-3xl font-light font-["Outfit"]'>
               Return and Refund Policy
             </h1>
             <p className='text-sm md:text-md font-["Outfit"]'>
