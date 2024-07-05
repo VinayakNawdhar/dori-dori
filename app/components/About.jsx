@@ -4,16 +4,6 @@ import React from 'react'
 import Util1 from './utilities/Util1'
 
 const About = () => {
-    useGSAP(() => {
-        Shery.imageMasker(".mask-target" /* Element to target.*/, {
-            //Parameters are optional.
-            mouseFollower: true,
-            text: "DORI DORI",
-            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-            duration:1,
-          });
-          
-    })
     return (
         <section id='about' className='py-10 bg-white/70 flex flex-col gap-5 md:scroll-m-[110px] scroll-m-[80px]'>
             <div className='flex items-center flex-wrap about-1'>
