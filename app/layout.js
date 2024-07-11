@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
           src="https://unpkg.com/sheryjs/dist/Shery.js"
         ></Script> */}
       </head>
-      <body>
+      <body className="bg-seashell">
         {children}
         <Link href={`https://wa.me/7710020950?text=I'm%20interested%20in%20your%20products!`} target="_blank">
           <img src="/images/wa.png" className="rounded-full fixed z-[999999] bottom-5 right-3 h-14 w-14 object-cover shadow-xl p-2 shadow-gray-400" />

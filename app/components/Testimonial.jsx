@@ -4,7 +4,7 @@ import React from 'react'
 
 const Testimonial = () => {
     return (
-        <section id='reviews' className="bg-white/90 py-16 md:scroll-m-[110px] scroll-m-[80px]">
+        <section id='reviews' className="py-16 md:scroll-m-[110px] scroll-m-[80px]">
             <h1 className='px-10 text-2xl md:text-4xl font-extrabold text-center font-["Outfit"] tracking-tighter drop-shadow-2xl'>WHAT OUR CUSTOMER SAYS</h1>
             <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 flex gap-8 md:flex-wrap items-stretch overflow-x-scroll md:overflow-auto">
                 {testimonials.map(test => (

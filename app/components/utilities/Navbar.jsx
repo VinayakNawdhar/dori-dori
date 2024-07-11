@@ -40,8 +40,8 @@ const Navbar = () => {
     })
     const [nav, setnav] = useState(false)
     return (
-        <nav className='flex py-3 h-[80px] md:h-[110px] bg-pink-50 shadow-md justify-between items-center px-32 fixed w-full z-[100]'>
-            <ul className='lg:flex gap-10 text-gray-600 hidden'>
+        <nav className='flex py-3 h-[80px] md:h-[110px] bg-seashell shadow-md justify-between items-center px-32 fixed w-full z-[100]'>
+            <ul className='lg:flex gap-10 text-black hidden'>
                 <li className='font-[400] text-xl'>
                     <Link className='scroll-links' href='#hero'>Home</Link>
                 </li>
@@ -53,9 +53,7 @@ const Navbar = () => {
                         <Link className='py-1 scroll-links hover:bg-pink-50 px-2 text-[18px] hover:before:w-0' href='#product'>Shop All</Link>
                     </div>
                 </li>
-                <li className='font-[400] text-xl'>
-                    <Link href='/our-story'>Our Story</Link>
-                </li>
+                
                 <li className='font-[400] text-xl'>
                     <Link href='/corporate-gifting'>Corporate Gifting</Link>
                 </li>
@@ -68,7 +66,7 @@ const Navbar = () => {
                         opacity: 0
                     })
                 }}>
-                    <i className="text-[var(--secondary-color)] ri-menu-unfold-2-line text-3xl absolute left-5 top-1/2 translate-y-[-50%]"></i>
+                    <i className="text-seashell ri-menu-unfold-2-line text-3xl absolute left-5 top-1/2 translate-y-[-50%]"></i>
                 </button> : <button className='lg:hidden' onClick={() => {
                     setnav(true)
                     gsap.to('.mob-nav', {
@@ -80,10 +78,10 @@ const Navbar = () => {
                         stagger: 0.05
                     })
                 }}>
-                    <i className="text-[var(--secondary-color)] ri-menu-fold-2-line text-3xl absolute left-5 top-1/2 translate-y-[-50%]"></i>
+                    <i className="text-seashell ri-menu-fold-2-line text-3xl absolute left-5 top-1/2 translate-y-[-50%]"></i>
                 </button>
             }
-            <div className='min-h-screen bg-pink-50 w-full absolute left-0 top-[80px] md:top-[110px] mob-nav translate-x-[-100%]'>
+            <div className='min-h-screen bg-seashell w-full absolute left-0 top-[80px] md:top-[110px] mob-nav translate-x-[-100%]'>
                 <ul className='flex flex-col gap-3'>
                     <li className='font-[400] tracking-wide text-xl p-4 border-b-4 border-pink-400/10'>
                         <Link className='scroll-links' href='#hero'>Home</Link>
@@ -119,13 +117,13 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <Image src='/images/dori-dori.png' width={100} height={100} className='magnet-target absolute left-[52%] translate-x-[-50%] h-[60px] w-[70px] md:h-[100px] md:w-[120px]'></Image>
-            <ul className='lg:flex gap-10 text-gray-600 w-[300px] hidden'>
+            <img src='/images/primary-double-logo.png' width={100} height={100} className='absolute left-[52%] translate-x-[-50%] w-[50px] md:w-[140px]'/>
+            <ul className='lg:flex gap-10 text-black w-[350px] hidden'>
                 <li className='font-[400] text-xl'>
                     <Link className='scroll-links' href='#about'>About</Link>
                 </li>
                 <li className='font-[400] text-xl'>
-                    <Link className='scroll-links' href='#reviews'>Reviews</Link>
+                    <Link href='/our-story'>Our Story</Link>
                 </li>
                 <li className='font-[400] text-xl relative group'>
                     <Link className='' href='/'>Support <i className="ri-arrow-down-s-fill"></i></Link>

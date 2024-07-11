@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors : {
+        "watermelon-pink" : "#ff7098",
+        "seashell" : "#f6f1e8",
+        "classic-rose" : "#ffcedd",
+        "aquamarine-blue" : "#80dcde"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

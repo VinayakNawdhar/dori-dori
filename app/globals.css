@@ -27,11 +27,20 @@
   font-weight: normal;
   src: url("/fonts/CheltenhamStdBook.woff") format("woff");
 }
+@font-face {
+  font-family: "Salute";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Salute.woff2") format("woff");
+}
 
 :root {
   --bg-color: #fdeeec; /* Define a root variable for primary color */
   --font-color: #5b484a;
-  --secondary-color: rgb(213, 107, 124);
+  --secondary-color: #ff7098;
+  --seashell : #f6f1e8;
+  --classic-rose : #ffcedd;
+  --aquamarine-blue : #80dcde;
 }
 
 * {
@@ -84,7 +93,8 @@ nav ul li a::before {
   color: var(--font-color);
 }
 .tagline {
-  font-family: "ITC Cheltenham Std Book";
+  font-family: "Salute";
+  padding: 9px 0px;
 }
 #hero div h2 {
   font-family: "Poetsen One";
@@ -92,6 +102,7 @@ nav ul li a::before {
 }
 .hiding {
   overflow: hidden;
+  /* line-height: 30px; */
 }
 
 /* Products   */

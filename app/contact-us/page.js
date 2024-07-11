@@ -45,7 +45,7 @@ const page = () => {
           <div className="">
             <div className="flex flex-col gap-1 my-6">
               <h1 className="font-['Outfit'] font-semibold">Address</h1>
-              <p className="font-['Outfit'] w-2/3">1/21 Donaldson St, Wyong NSW 2259 Australia</p>
+              <p className="font-['Outfit'] w-2/3">160, Shop No.2, Ganga Niwas, Pannalal Ghosh Marg, Malad West, Mumbai-400064</p>
             </div>
             <div className="flex flex-col gap-1 my-6">
               <h1 className="font-['Outfit'] font-semibold">Email</h1>

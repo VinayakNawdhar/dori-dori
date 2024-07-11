@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 const Footer = () => {
     return (
-        <section id='footer' className='md:scroll-m-[110px] scroll-m-[80px] bg-[#FDF2F8]'>
+        <section id='footer' className='md:scroll-m-[110px] scroll-m-[80px] bg-seashell'>
             <div className='flex flex-wrap p-10 gap-5 justify-evenly'>
-                <div className='flex flex-col items-center'>
-                    <img className='h-32 md:h-48' src="/images/dori-dori.png" alt="" />
+                <div className='flex flex-col items-center mt-8'>
+                    <img className='h-32 md:h-48' src="/images/submark-1.png" alt="" />
                     <img className='h-32 md:h-48' src="https://media4.giphy.com/media/DqGC1uRJMVP6OqFwWf/giphy.gif?cid=6c09b952iwwsflmgca7blzc9ibovqwz2jtujhoa9wifrli6y&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="" />
                 </div>
                 <div className='w-96 md:mt-10'>
