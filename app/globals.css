@@ -36,20 +36,22 @@
 
 :root {
   --bg-color: #fdeeec; /* Define a root variable for primary color */
-  --font-color: #5b484a;
+  --font-color: #554445;
   --secondary-color: #ff7098;
   --seashell : #f6f1e8;
-  --classic-rose : #ffcedd;
+  --classic-rose : #fbe3ea;
   --aquamarine-blue : #80dcde;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   font-family: "Outfit";
   scrollbar-width: 0px;
 }
 body {
   overflow-x: hidden;
-  background-color: var(--bg-color) !important;
+  background-color: var(--seashell) !important;
 }
 
 @layer utilities {
@@ -94,15 +96,16 @@ nav ul li a::before {
 }
 .tagline {
   font-family: "Salute";
-  padding: 9px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 #hero div h2 {
   font-family: "Poetsen One";
   text-shadow: 0px 0px 10px rgba(227, 173, 215, 0.664);
 }
 .hiding {
-  overflow: hidden;
-  /* line-height: 30px; */
+  height: 120px;
 }
 
 /* Products   */
