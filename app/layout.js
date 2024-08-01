@@ -67,25 +67,11 @@ export default function RootLayout({ children }) {
           strategy="beforeInteractive"
           src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         ></Script>
-        {/* <Script
-          strategy="beforeInteractive"
-          src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"
-        ></Script>
-        <Script
-          strategy="beforeInteractive"
-          src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"
-        ></Script> */}
-        {/* <Script
-          type="text/javascript"
-          strategy="beforeInteractive"
-          src="https://unpkg.com/sheryjs/dist/Shery.js"
-        ></Script> */}
       </head>
       <body className="bg-seashell">
         {children}
         <Link href={`https://wa.me/7710020950?text=I'm%20interested%20in%20your%20products!`} target="_blank">
           <img src="/images/wa.png" className="rounded-full fixed z-[999999] bottom-5 right-3 h-14 w-14 object-cover shadow-xl p-2 shadow-gray-400" />
-      
         </Link>
         </body>
     </html>

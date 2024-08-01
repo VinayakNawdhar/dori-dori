@@ -106,6 +106,7 @@ nav ul li a::before {
 }
 .hiding {
   height: 120px;
+  /* overflow: hidden; */
 }
 
 /* Products   */

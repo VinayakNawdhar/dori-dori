@@ -114,14 +114,14 @@ const Hero = () => {
   });
   useGSAP(() => {
     if(!runOnce){
-      gsap.from('.hiding .tagline',{
-        y : "100%",
-        stagger : 0.5,
-        ease : "Power1.easeInOut",
-        onComplete : () => {
-          dispatch(setRunOnce({runOnce : true}))
-        }
-      })
+      // gsap.from('.hiding div',{
+      //   y : "150%",
+      //   stagger : 0.5,
+      //   ease : "Power1.easeInOut",
+      //   onComplete : () => {
+      //     dispatch(setRunOnce({runOnce : true}))
+      //   }
+      // })
     }
   })
   useEffect(() => {
@@ -142,11 +142,11 @@ const Hero = () => {
   return (
     <section className="pt-[80px] md:pt-[110px] relative" id="hero">
       <div className="pt-8 px-8 md:pt-14 md:pb-6 md:px-32 md:py-20 flex flex-col gap-0 space-y-[-15px] md:space-y-0 md:scroll-m-[110px] scroll-m-[80px]">
-        <div className="hiding"><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] tagline flex items-center">Welcome to</h1 ></div>
+        <div className="hiding"><div><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] tagline flex items-center">Welcome to</h1 ></div></div>
         <div className="hiding">
-        <img src="/images/primary-pink-logo.png" className="w-96" alt="" />
+        <div><img src="/images/hero_logo.png" className="w-[450px]" alt="" /></div>
         </div>
-        <div className="hiding"><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] tagline">Wonderland!</h1></div>
+        <div className="hiding"><div><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] tagline">Wonderland!</h1></div></div>
         <div className="flex gap-4 md:gap-8 py-6 md:py-10">
           <button className="px-4 w-60 py-2 md:px-6 text-sm md:text-md md:w-52 font-semibold rounded-full text-white text-center bg-watermelon-pink hover:bg-pink-700 transition-all duration-500">ORDER NOW</button>
           <Link href='/our-story' className="px-4 w-60 py-2 md:px-8 md:py-4 text-sm md:text-md md:w-52 font-semibold border-4 border-watermelon-pink rounded-full text-center">KNOW MORE</Link>
