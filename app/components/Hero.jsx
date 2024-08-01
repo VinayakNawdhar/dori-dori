@@ -141,10 +141,10 @@ const Hero = () => {
 
   return (
     <section className="pt-[80px] md:pt-[110px] relative" id="hero">
-      <div className="pt-8 px-8 md:pt-14 md:pb-6 md:px-32 md:py-20 flex flex-col gap-0 space-y-[-15px] md:space-y-0 md:scroll-m-[110px] scroll-m-[80px]">
+      <div className="pt-8 px-8 md:pt-14 md:pb-6 md:px-32 md:py-20 flex flex-col gap-6 space-y-[-15px] md:space-y-0 md:scroll-m-[110px] scroll-m-[80px]">
         <div className="hiding"><div><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] tagline flex items-center">Welcome to</h1 ></div></div>
         <div className="hiding">
-        <div><img src="/images/hero_logo.png" className="w-[450px]" alt="" /></div>
+        <div className="relative h-[50px] lg:h-[110px]"><img src="/images/hero_logo.png" className="w-56 md:w-[450px] absolute" alt="" /></div>
         </div>
         <div className="hiding"><div><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] tagline">Wonderland!</h1></div></div>
         <div className="flex gap-4 md:gap-8 py-6 md:py-10">
