@@ -122,6 +122,27 @@ const Hero = () => {
       //     dispatch(setRunOnce({runOnce : true}))
       //   }
       // })
+      let tlforanimation = gsap.timeline({
+        onComplete : function(){
+          dispatch(setRunOnce({runOnce : true}))
+        }
+      });
+      tlforanimation.to('.animate',{
+        top : "100dvh",
+        stagger : 0.2,
+        duration : 2,
+        ease : "elastic.inOut"
+      })
+      .to('.animate',{
+        x : "150vw",
+        opacity : 0,
+        duration : 1.5,
+        delay : 1
+      })
+      // gsap.to('.animate',{
+      //   visibility : "hidden",
+      //   delay : 4
+      // })
     }
   })
   useEffect(() => {
@@ -140,11 +161,22 @@ const Hero = () => {
   })
 
   return (
-    <section className="pt-[80px] md:pt-[110px] relative" id="hero">
+    <section className="pt-[80px] md:pt-[110px]" id="hero">
+      <img src="/images/animation/2.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[60vw]" alt="" />
+      <img src="/images/animation/5.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[15vw]" alt="" />
+      <img src="/images/animation/6.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[70vw]" alt="" />
+      <img src="/images/animation/3.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[90vw]" alt="" />
+      <img src="/images/animation/4.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[35vw]" alt="" />
+      <img src="/images/animation/1.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[5vw]" alt="" />
+      <img src="/images/animation/1.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[45vw]" alt="" />
+      <img src="/images/animation/4.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[60vw]" alt="" />
+      <img src="/images/animation/7.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[75vw]" alt="" />
+      <img src="/images/animation/2.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[25vw]" alt="" />
+      <img src="/images/animation/5.png" className="absolute z-40 animate md:h-[100px] md:w-[100px] h-[70px] w-[70px] left-[80vw]" alt="" />
       <div className="pt-8 px-8 md:pt-14 md:pb-6 md:px-32 md:py-20 flex flex-col gap-6 space-y-[-15px] md:space-y-0 md:scroll-m-[110px] scroll-m-[80px]">
         <div className="hiding"><div><h1 className="text-[9vw] md:text-8xl font-extrabold lg:w-[63%] tagline flex items-center">Welcome to</h1 ></div></div>
         <div className="hiding">
-        <div className="relative h-[50px] md:h-[110px] lg:h-[110px]"><img src="/images/hero_logo.png" className="w-56 md:w-[450px] absolute" alt="" /></div>
+        <div className="relative h-[50px] md:h-[70px] lg:h-[110px]"><img src="/images/hero_logo.png" className="w-56 md:w-[450px] absolute" alt="" /></div>
         </div>
         <div className="hiding"><div><h1 className="text-[9vw] md:text-8xl font-extrabold md:w-[63%] tagline">Wonderland!</h1></div></div>
         <div className="flex gap-4 md:gap-8 py-6 md:py-10">

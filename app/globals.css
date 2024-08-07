@@ -90,6 +90,9 @@ nav ul li a::before {
 }
 
 /* Hero  */
+main{
+  position: relative;
+}
 #hero {
   width: 100%;
   color: var(--font-color);
@@ -149,6 +152,12 @@ nav ul li a::before {
 .circle{
   background-color: #FAF3F3 !important;
   color: black !important;
+}
+.animate{
+  -webkit-filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666);
+  transform: translate(-50%,-100%);
+  top: -20dvh;
 }
 
 @media only screen and (max-width: 1245px) {
